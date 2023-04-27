@@ -61,14 +61,16 @@ public class Hash {
         System.out.println("\n"+"Number of hash clashes: " +numOfSmashes);
     }
 
-    void namesCount() {
+    void printNamesAndCount() {
         int nameCount = 0;
 
+        System.out.println("Names in the hash table: ");
         for (int i = 0; i < tableLength; i++) {
             if(hashTable[i] != null) {
+                System.out.println(hashTable[i]);
                 ++nameCount;
             }
         }
-        System.out.println("There are " +nameCount+ " names in the table");
+        System.out.println("\n"+"There are " +nameCount+ " names in the table");
     }
 }

@@ -29,7 +29,7 @@ public class Main {
             }
             myHash.showHashTable();
             System.out.println();
-            myHash.namesCount();
+            myHash.printNamesAndCount();
         }
         catch (FileNotFoundException e) {
             System.out.println(e);
